@@ -1,75 +1,408 @@
-<html lang="en">
+<!--Họ và tên: Phí Văn Kiên-->
+<!--Mã sinh viên: 1821050546-->
 
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="StyleSheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>BÀI TẬP LỚN</title>
+	<style>
+* {
+  box-sizing: border-box;
+}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+body {
+	/*kiểu chữ*/
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/* khung đầu trang */
+header {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  background-color:#FF6633;
+  animation-name: example;
+  animation-duration: 4s;
+  
+}
+@keyframes example {
+  from {background-color:#FF6633;}
+  to {background-color:#00FF00;}
+}
+
+nav {
+  float: left;
+  width: 30%;
+  background: #ccc;
+  padding: 20px;
+  height:1100px;
+}
+
+
+nav ol {
+  list-style-type: none;
+  padding:0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  
+}
+
+
+section:after{
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+
+footer {
+  background-color: rgb(148, 140, 140);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+header .header1{
+	display: flex;
+}
+header .header1 .logo{
+	width:35%;
+	text-align: center;
+}
+header .header1 .timkiem{
+	width: 30%;
+}
+header .header1 .right_header{
+	width: 40%;
+	display: flex;
+}
+header .header1 .right_header .phone{
+	width: 33%;
+}
+
+header .header1 .right_header .giohang{
+	width: 33%;
+}
+header .header1 .right_header .taikhoan{
+	width: 33%;
+}
+header .header1 .right_header .phone i{
+	color: #333333;
+	font-size: 14px;
+}
+header .header1 .right_header .giohang i{
+	color: #333333;
+	font-size: 14px;
+}
+header .header1 .right_header .taikhoan p{
+	color: #333333;
+	font-size: 14px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+  .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+ .hihi a{
+  padding: 10px 20px;
+
+ }
+</style>
 </head>
-
 <body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
-    </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
-                </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
+   <header>
+   	<div class="header1">
+   		<div class="logo">
+   			<img  style="" src="" alt="">
+   		</div>
+   		<div class="timkiem">
+   			<input type="text" placeholder="Tìm kiếm">
+   		</div>
+   		<div class="right_header">
+   			<div class="phone">
+   				
+   				<i class="fas fa-phone-volume">0987654321</i>
+   			</div>
+   			<div class="giohang">
+   				<img src="" alt="" style=" display: block;">
+   				<i class="fab fa-facebook-square"><a href="Facebook.com">Facebook</a></i>
+   			</div>
+   			<div class="taikhoan">
+   				<img id="next" src="img_trans.gif" alt="" style="width: 2px; height: 2px; display: block;">
+   				<p><a href="">Đăng Nhập</a></p>
+   			</div>
+   		</div>
+   	</div>
+    <!-- <i  style="margin-right: 100px;">SHOP MEN</i>
+     -->
+   	 <ul>
+   		<li>
+   			<a href="">Trang Chủ</a>
+   		</li>
+   		<li>
+   			<a href="">Quần Nam</a>
+   		</li>
+   		<li>
+   			<a href="">Áo Nam</a>
+   		</li>
+   		<li>
+   			<a href="">Phụ Kiện</a>
+   		</li>
+   		<li>
+   			<a href="">Mũ</a>
+   		</li>
+   		<li>
+   			<a href="">Giỏ Hàng</a>
+   		</li>
+   		<li>
+   			<a href="">Phản Hồi</a>
+   		</li>
+   	</ul>
+   	</dev>
+   </header>
+   <section>
+   		<nav>
+       
+        <i class="fas fa-align-justify";> Danh Mục</i>
+	   		<ol>
+	   			<li><a href="">Quần Nam</a></li>
+	   			<li><a href="">Áo Nam</a></li>
+	   			<li><a href="">Ví Da</a></li>
+	   		</ol>
+        <ul class="a">
+          <li style="padding: 5px 10px;"><a href="">Hàn Quốc</a></li>
+          <li style="padding: 5px 10px;"><a href="">Quảng Châu</a></li>
+          <li style="padding: 5px 10px;"><a href="">Công Sở</a></li>
+          <li style="padding: 5px 10px;"><a href="">Thể Thao</a></li>
+          <li style="padding: 5px 10px;"><a href="">Trẻ Em</a></li>
+          <li style="padding: 5px 10px;"><a href="">Hàng Âu</a></li>
         </ul>
-    </nav>
+        <i class="fas fa-align-justify";> Phụ Trang</i>
+        <ul>
+          <li style="padding: 5px 10px;"><a href="">Kính Mắt</a></li>
+          <li style="padding: 5px 10px;"><a href="">Thắt Lưng</a></li>
+          <li style="padding: 5px 10px;"><a href="">Mũ</a></li>
+          <li style="padding: 5px 10px;"><a href="#giày">Giày</a></li>
+        </ul>
+        <h3><a href="#">Sản Phẩm Mới</a></h3>
+   		</nav>
+	   	<article>
+	   		<h3 style="text-align: center;font-size: 30px;color:gray;">Tổng Thể</h3>
+	   		<div class="content1">
+		   		<img src="https://4menshop.com/images/thumbs/2020/02/ao-so-mi-co-lanh-tu-mau-xam-asm1311_2_small-15089-t.jpg" style="float: left; width:200px; height: 200px;">
+		   		<p class="pa" style="font-family:courier;">
+		   		WEBSITE mua sắm thời trang hàng hiệu trực tuyến Việt Nam
 
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
+					bạn đang tìm kiếm những mẫu thời trang, quần áo và phụ kiện mới nhất trên mạng? hãy mua sắm ngay hôm nay tại THỜI TRANG NAM!
 
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
+					THỜI TRANG NAM sẽ mang lại cho khách hàng những trải nghiệm mua sắm thời trang hàng hiệu trực tuyến thú vị từ các thương hiệu thời trang quốc tế và trong nước, cam kết chất lượng phục vụ hàng đầu cùng với những bộ sưu tập quần áo nam nữ khổng lồ từ trang phục, phụ kiện cho phụ nữ với những xu hướng thời trang mới nhất. Bạn có thể tìm thấy những bộ trang phục mình muốn từ những bộ đồ ở nhà thật thoải mái hay tự tin trong những bộ trang phục công sở phù hợp. Những trải nghiệm mới chỉ có ở trang mua sắm hàng hiệu trực tuyến THỜI TRANG NAM
+		    	 </p>
+	   		</div>
+	   		<div class="content1">
+		   		<img src="https://theme.hstatic.net/1000199383/1000258989/14/banner_bottom_slider_1.png?v=5871"style="width: 200px;height: 200px";>
+		   		<p class="pa" style="font-family:courier;">
+		   		Phối đồ nam công sở làm sao cho đẹp? Nếu bạn đang băn khoăn không biết nên làm như thế nào, hãy cùng  tham khảo bài viết dưới đây nhé!
+          Ngày nay, các bạn nam dù ít hay nhiều cũng nên biết về xu hướng thời trang. Nhất là những ai đã và đang làm việc trong môi trường văn phòng, hàng ngày cần tiếp xúc với nhiều người. Một bộ đồ phù hợp, lịch sự có thể tạo ấn tượng tốt đấy!
 
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
 
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
+		    	 </p>
+	   		</div>
+        <div class="content1">
+          <img style="width: 200px;height: 200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVJ6be1QhiwAS2uLkBqhyW2z0CXlT-XOfq5A5LhiArz_7AHivO&usqp=CAU">
+          <p class="pa" style="font-family:courier;">Đây là set đồ không thể thiếu trong tủ đồ của bất kì bạn nam nào bởi chúng không bao giờ lỗi mốt. Khi mặc bộ đồ này bạn nên sử dụng thêm một chiếc thắt lưng đi kèm để tạo sự lịch lãm nhé! Trong khi áo sơ mi có rất nhiều màu để bạn lựa chọn thay đổi thì quần tây/quần kaki có một vài màu sắc cơ bản như: đen, trắng, cà phê sữa...tùy theo sở thích riêng của bạn.</p>
+        </div>
+       <div class="gallery">
+         <a target="_blank" href="img_5terre.jpg">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8P0hmThp5fYjzO2IWc6p9oVYO7qUu8blnpl6KdbY-v4GWA4MWlOmR9RrQG-TK9dMufdzIP7A&usqp=CAc" alt="Cinque Terre" width="500" height="200">
+        </a>
+       <div class="desc">Sơ Mi Nam<br>
+                    150.000đ</div>
+      </div>
 
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJ_0x1R9PalC8VTsfICaNrWCqP2EAGbtqCBZGzoUlDQTIxmJxe8NQab_1yNrw&usqp=CAc" alt="Forest" width="500" height="200">
+       </a>
+       <div class="desc">Áo Phông Nam<br>
+                    149.000đ</div>
+      </div>
 
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
+      <div class="gallery">
+       <a target="_blank" href="img_lights.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8-a0Ai1XiqVTZ40reUofjc-W1iOFmbKqGfCtSWrDIsWa44GRt&usqp=CAU" alt="Northern Lights" width="500" height="200">
+      </a>
+      <div class="desc">Quần Âu Nam<br>
+                    250.000đ</div>
+      </div>
 
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
-
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
+      <div class="gallery">
+       <a target="_blank" href="img_mountains.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQydX-XOGN-i6vPZwkh3wnkqrj5W6n_tjeqYu85908yfrC4gRf9&usqp=CAU" alt="Mountains" width="500" height="200">
+      </a>
+      <div class="desc">Áo Thun Nam Đẹp<br>
+                     200.000đ</div>
+     </div>
+     <div class="gallery">
+      <a target="_blank" href="img_mountains.jpg">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSauYZe81zHXrnQLzeq948AIBjpPkQpiy_1j__DOwiqk5KoWag8&usqp=CAU" alt="Mountains" width="500" height="200">
+      </a>
+     <div class="desc">Quần Bò Nam Đẹp<br>
+                     200.000đ</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+       <img src="https://gence.vn/wp-content/uploads/2020/08/that-lung-da-nam-cong-so-ls06-1.jpg" alt="Northern Lights" width="500" height="200">
+     </a>
+     <div class="desc">Dây lưng da<br>
+                   350.000đ</div>
+     </div>
+     <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+       <img src="https://product.hstatic.net/1000269337/product/mj3016b102-595x758-_1__e37fa057561d4b8fb22590cc93e5bfb5_master.jpg" alt="Northern Lights" width="500" height="200">
+     </a>
+     <div class="desc">Kính mắt<br>
+                   1.350.000đ</div>
+     </div>
+     <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+       <img src="https://kinhmatnam.vn/wp-content/uploads/2017/03/IMG_0168.jpg" alt="Northern Lights" width="500" height="200">
+     </a>
+     <div class="desc">Kính mắt thời trang<br>
+                   1.050.000đ</div>
+     </div>
+     <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+       <img src="https://tamanh.net/wp-content/uploads/2015/02/giay-nam-buoc-day-da-tron-gnta1901-d..jpg" alt="Northern Lights" width="500" height="200">
+     </a>
+     <div class="desc">Giày tây<br>
+                   1.050.000đ</div>
+     </div>
+     <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+       <img src="https://manzano.vn/giay-dang-cap-manzano-nam-tinh-lich-lam-m66656-p968251.html" alt="Northern Lights" width="500" height="200">
+     </a>
+     <div class="desc">Giày tây đẹp<br>
+                   1.550.000đ</div>
+     </div>
+	   	</article>
+</section>
+   <footer>
+     <h3>Contact:</h3>
+      <p>Địa chỉ:Phường Đức Thắng - Quận Bắc Từ Liêm - TP.Hà Nội</p>
+      <p>Call:0987654321</p>
+      <p>Email:Phivankien@gmail.com</p>
+    <h3>Customer Support:</h3>
+    <p>Liên hệ cửa hàng</p>
+    <div class="hihi">
+<a href="#">&laquo;Trước</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;Tiếp</a>
+    </div>
+   </footer>
 </body>
-
 </html>
+<style>
+	section nav ol li{
+		display: inline-block;
+		padding: 12px 15px;
+	}
+	section nav ol li a{
+		text-decoration: none;
+	}
+	section article .content1{
+		margin-top: 20px;
+		display:flex;
+	}
+	section article .content1 .pa{
+		display:block;
+		width: 80%;
+		padding-left: 30px;
+	}
+	section article .content1 img{
+		display:block;
+		width: 20%;
+		max-width: 100%;
+	}
+	header ul{
+		width: 1100px;
+		margin: auto;
+	}
+	header ul li{
+		display: inline-block;
+		padding: 12px 15px;
+	}
+	header ul li a{
+		font-size: 16px;
+		text-decoration: none;
+	}
+	header h1{
+		background-color: #9CF7D7;
+	}
+  ul.a {
+  list-style-type: circle; 
+   }
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  
+}
+
+li a {
+  display: block;
+  
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+ 
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+} 
+
+</style>

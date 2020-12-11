@@ -8,5 +8,7 @@ Trang web có 3 phần header, body và footer
 Trong bài tập này em có sử dụng nhiều loại thẻ, font chữ khác nhau để tạo nên sự đa dạng cho trang web.
 Dưới đây là hình ảnh về trang web em tạo được
 <img src="./anh1.png"/>
-    https://github.com/phivankien1511/static-web/issues/1#issue-762590410
+<img src="./anh2.png"/>
+<img src="./anh3.png"/>
+
 

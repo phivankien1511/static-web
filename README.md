@@ -7,8 +7,8 @@ Trang web có 3 phần header, body và footer
     Phần footer gầm có liên hệ, hỗ trợ khách hàng và chuyển trang mới.
 Trong bài tập này em có sử dụng nhiều loại thẻ, font chữ khác nhau để tạo nên sự đa dạng cho trang web.
 Dưới đây là hình ảnh về trang web em tạo được
-<img src="./anh1.png"/>
-<img src="./anh2.png"/>
-<img src="./anh3.png"/>
+<img src="img/anh1.png"/>
+<img src="img/anh2.png"/>
+<img src="img/anh3.png"/>
 
 
